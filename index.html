@@ -1,61 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Didlydoo</title>
-  </head>
-  <body>
-    <header>
-      <h1>Didlydoo</h1>
-      <section>
-        <button>Add an event</button>
-        <label for="formEvent" class="form"> A faire :</label>
-                    <form class="content__form__todo">
-                        <div class="input">
-                            <p class="cat">Titre de l'évènement: </p>
-                        <input type="text" name="formEvent" class="form__titre" required minlength="3" maxlength="256" size="20" >
-                    </div>
-                    <div class="input">
-                        <p class="cat">Description : </p>
-                        <input type="text" name="formEvent" class="form__description" required minlength="5" maxlength="1024" size="20">
-                </div>
-                <div class="input">
-                    <p class="cat">Date :</p>
-                        <input type="date" name="formEvent" id="form__date" required minlength="3" maxlength="50" size="20">
-                        </div>
-                        <button class="form__submit">Submit</button>
-                    </form>
-                    
-                    <ul class="list__todo">
-                    </ul>
-            </section>
-        </div>
-      </section>
-    </header>
-    <main>
-      <section class="event">
-        <h2 class="event__name">Anniversaire de Robin</h2>
-        <p class="event__description">Venez faire la fête , victuailles a volontée.</p>
-      </section>
-      <table>
-        <thead>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Didlydoo</title>
+  <script defer type="module" src="/main.js"></script>
+</head>
+
+<body>
+  <!--Base du site (titre , petite phrase d'accroche et bouton)-->
+  <header class="header">
+    <h1 class="header__title">Didlydoo</h1>
+    <p id="phrase"><i>",organises des évènements professionels ou avec tes proches quand tu le souhaites"</i></p>
+    <button id="addEventButton" class="header__add-event-button">create +</button>
+    <!--Formulaire pour la création d'évenements-->
+    <form class="form">
+
+      <div class="form__group form__group--title">
+        <p class="form__text">Titre de l'évènement: </p>
+        <input type="text" name="formEvent" class="form__input" required minlength="3" maxlength="256" size="20">
+      </div>
+
+      <div class="form__group form__group--description">
+        <p class="form__text">Description : </p>
+        <input type="text" name="formEvent" class="form__input" required minlength="5" maxlength="1024" size="20">
+      </div>
+
+      <div class="form__group form__group--date">
+        <p class="form__text">Date :</p>
+        <input type="date" name="formEvent" class="form__input" required minlength="3" maxlength="50" size="20">
+      </div>
+
+      <button class="form__submit-button">Submit</button>
+    </form>
+
+    <ul class="header__todo-list">
+    </ul>
+  </header>
+
+  <main class="main-content">
+    <!--Menu deroulant-->
+    <label for="pet-select">Choose an event</br></label>
+
+    <select name="event" id="event-select">
+      <option value="">--Please choose an event--</option>
+      <option value="1">Event 1 - Anniversaire de Robin</option>
+      <option value="2">Event 2 - Vacances Espagne</option>
+
+    </select>
+    <!--Les évènements-->
+    <section class="eventContainer">
+      <div class="event event1">
+        <h2 class="event1__name">Anniversaire de Robin</h2>
+        <p class="event1__description">Venez faire la fête, victuailles a volontée.</p>
+
+
+        <table class="steelBlueCols">
+          <thead>
           <tr>
-            <th colspan="2">The table header</th>
+            <th></th>
+            <th>date 1</th>
+            <th>date 2</th>
+            <th>date 3</th>
+           
           </tr>
-        </thead>
-        <tbody>
+          </thead>
+          <tbody>
           <tr>
-            <td>The table body</td>
-            <td>with two columns</td>
+            <td>Name 1</td><td>disponible</td><td>pas disponible</td><td> disponible</td></tr>
+            <tr>
+            <td>Name 2</td><td>disponible</td><td>pas disponible</td><td>pas disponible</td></tr>
+            <tr>
+            <td>Name 3</td><td>disponible</td><td>disponible</td><td>pas disponible</td></tr>
+            <tr>
+            <td>Name 4</td><td> disponible</td><td> disponible</td><td>pas disponible</td></tr>
+          </tbody>
           </tr>
-        </tbody>
-      </table>
-      
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+          </table>
+      </div>
+      <div class="event event2">
+        <h2 class="event2__name">Vacances Espagne</h2>
+        <quote class="event2__description">Vacances entres amis en espagne , visite de Madrid et la playa</quote>
+
+
+        <table class="steelBlueCols">
+          <thead>
+          <tr>
+            <th></th>
+          <th>date 1</th>
+          <th>date 2</th>
+          <th>date 3</th>
+         
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Name 1</td><td>disponible</td><td>pas disponible</td><td> disponible</td></tr>
+            <tr>
+            <td>Name 2</td><td>disponible</td><td>pas disponible</td><td>pas disponible</td></tr>
+            <tr>
+            <td>Name 3</td><td>disponible</td><td>disponible</td><td>pas disponible</td></tr>
+            <tr>
+            <td>Name 4</td><td> disponible</td><td> disponible</td><td>pas disponible</td></tr>
+          </tbody>
+          </tr>
+          </table>
+      </div>
+    </section>
   </main>
-  </body>
+
+
+</body>
+
 </html>

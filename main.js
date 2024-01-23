@@ -1,24 +1,40 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import { displayForm } from "./assets/form.js";
+import { hideForm } from "./assets/form.js";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const createButton = document.getElementById("addEventButton");
+const form = document.querySelector(".form");
+const eventSelect = document.getElementById('event-select');
 
-setupCounter(document.querySelector('#counter'))
+document.addEventListener("DOMContentLoaded", (event) => {
+  event.preventDefault()
+  const username = prompt("Please enter your name:");
+  if (username !== null && username !== "") {
+    const phraseElement = document.getElementById("phrase");
+    phraseElement.innerHTML = `<i>"${username}, organises des évènements professionels ou avec tes proches quand tu le souhaites"</i>`;
+  };
+
+  createButton.addEventListener("click", () => {
+    if (createButton.innerHTML === "create +") {
+     displayForm();
+    } else {
+       hideForm();
+    }
+ });
+ 
+ eventSelect.addEventListener('change', function() {
+ 
+   document.querySelectorAll('.event').forEach(function(eventDiv) {
+     eventDiv.style.display = 'none';
+   });
+ 
+   const selectedEvent = this.value;
+   if (selectedEvent) {
+     const eventDivToShow = document.querySelector(`.event.event${selectedEvent}`);
+     if (eventDivToShow) {
+       eventDivToShow.style.display = 'flex'; 
+     }
+   }
+ });
+ 
+});
+
