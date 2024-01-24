@@ -114,14 +114,14 @@ table.steelBlueCols {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
+    // display: none;
   }
   .form__titre , .form__description , .form__date{
     border:none;
     border-radius: 10px;
   }
 
-  .form__submit-button {
+  .form__submit {
     margin-top: 10px;
     border: rgb(67, 67, 255) solid 1px;
     background-color: whitesmoke;

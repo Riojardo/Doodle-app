@@ -1,123 +1,167 @@
 [
   {
-    "id": "2374e43ccdd5",
-    "name": "Wazah birthday",
+    "id": "5cceec4f53eb",
+    "name": "Rakapak",
     "author": "John Doe",
-    "description": "birthday wazazaza",
+    "description": "Noe birthday",
     "dates": [],
-    "created_at": "2024-01-24T10:48:39.110Z",
+    "created_at": "2024-01-24T14:54:22.238Z",
     "num_modification": 0,
-    "last_modification": "2024-01-24T10:48:39.110Z",
+    "last_modification": "2024-01-24T14:54:22.238Z",
     "attendees": []
   },
   {
-    "id": "260317b0f306",
+    "id": "a25b07933e65",
+    "name": "Wazah birthday",
+    "author": "John Doe",
+    "description": "pashak fika",
+    "dates": [],
+    "created_at": "2024-01-24T14:47:25.688Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:47:25.688Z",
+    "attendees": []
+  },
+  {
+    "id": "0e72a581b6c0",
+    "name": "Rakapaksqdsdq",
+    "author": "John Doe",
+    "description": "Rakapak",
+    "dates": [],
+    "created_at": "2024-01-24T14:29:14.058Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:29:14.058Z",
+    "attendees": []
+  },
+  {
+    "id": "c817fd628388",
+    "name": "Rakapak",
+    "author": "John Doe",
+    "description": "Wazah birthday",
+    "dates": [],
+    "created_at": "2024-01-24T14:23:56.288Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:23:56.288Z",
+    "attendees": []
+  },
+  {
+    "id": "f01bcd5d3ab3",
+    "name": "Rakapakasd",
+    "author": "John Doe",
+    "description": "Rakapaksqdsdq",
+    "dates": [],
+    "created_at": "2024-01-24T14:22:27.938Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:22:27.938Z",
+    "attendees": []
+  },
+  {
+    "id": "ddcb127eb9b1",
     "name": "Noe birthday",
     "author": "John Doe",
     "description": "Noe birthday",
     "dates": [],
-    "created_at": "2024-01-24T10:43:33.603Z",
+    "created_at": "2024-01-24T14:20:18.838Z",
     "num_modification": 0,
-    "last_modification": "2024-01-24T10:43:33.603Z",
+    "last_modification": "2024-01-24T14:20:18.838Z",
     "attendees": []
   },
   {
-    "id": "f5b6564b5dc4",
-    "name": "My sweet 16",
-    "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
+    "id": "67f1f4b3f812",
+    "name": "Rakapakasd",
     "author": "John Doe",
-    "dates": [
-      "2022-03-17",
-      "2022-03-18",
-      "2022-03-21",
-      "2022-03-22"
-    ],
-    "attendees": [
-      {
-        "name": "Michou",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": true
-          },
-          {
-            "date": "2022-03-18",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "Jean-Daniel",
-        "dates": [
-          {
-            "date": "2022-03-17",
-            "available": false
-          },
-          {
-            "date": "2022-03-21",
-            "available": true
-          }
-        ]
-      }
-    ],
-    "created_at": "2021-11-15T00:00",
-    "num_modification": 3,
-    "last_modification": "2021-11-15T02:15"
+    "description": "Rakapaksqdsdq",
+    "dates": [],
+    "created_at": "2024-01-24T14:16:36.649Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:16:36.649Z",
+    "attendees": []
   },
   {
-    "id": "38b643aeb883",
-    "name": "The big sale @ The Mall",
-    "description": "I want to buy stuff at the mall, but don't want to go alone who is up?",
-    "author": "Jean D'eau",
-    "dates": [
-      "2022-01-10",
-      "2022-02-10",
-      "2022-03-10",
-      "2022-03-11",
-      "2022-03-12"
-    ],
-    "attendees": [
-      {
-        "name": "Michou",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
-          }
-        ]
-      },
-      {
-        "name": "Jane Doe",
-        "dates": [
-          {
-            "date": "2022-01-10",
-            "available": true
-          },
-          {
-            "date": "2022-02-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-10",
-            "available": true
-          },
-          {
-            "date": "2022-03-11",
-            "available": true
-          },
-          {
-            "date": "2022-03-12",
-            "available": false
-          }
-        ]
-      }
-    ],
-    "created_at": "2021-11-13T14:00",
+    "id": "fc91580eb6cb",
+    "name": "Rakapaksqdsdq",
+    "author": "John Doe",
+    "description": "Wazah birthday",
+    "dates": [],
+    "created_at": "2024-01-24T14:13:47.788Z",
     "num_modification": 0,
-    "last_modification": "2021-11-13T14:00"
+    "last_modification": "2024-01-24T14:13:47.788Z",
+    "attendees": []
+  },
+  {
+    "id": "fd89c025d4ba",
+    "name": "Rakapakasd",
+    "author": "John Doe",
+    "description": "Rakapaksqdsdq",
+    "dates": [],
+    "created_at": "2024-01-24T14:12:16.898Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:12:16.898Z",
+    "attendees": []
+  },
+  {
+    "id": "666951ba69f9",
+    "name": "Rakapakasd",
+    "author": "John Doe",
+    "description": "Rakapaksqdsdq",
+    "dates": [],
+    "created_at": "2024-01-24T14:10:44.628Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T14:10:44.628Z",
+    "attendees": []
+  },
+  {
+    "id": "c1a8c7b1e2b6",
+    "name": "Rakapakasd",
+    "author": "John Doe",
+    "description": "Rakapaksqdsdq",
+    "dates": [],
+    "created_at": "2024-01-24T13:59:47.318Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T13:59:47.318Z",
+    "attendees": []
+  },
+  {
+    "id": "b05edc82ac9a",
+    "name": "Rakapaksqdsdq",
+    "author": "John Doe",
+    "description": "Rakapakasdqsdqsdqsdqd",
+    "dates": [],
+    "created_at": "2024-01-24T13:43:13.798Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T13:43:13.798Z",
+    "attendees": []
+  },
+  {
+    "id": "2b2e984790af",
+    "name": "Rakapakasd",
+    "author": "John Doe",
+    "description": "Wazah birthdayadsa",
+    "dates": [],
+    "created_at": "2024-01-24T13:34:12.527Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T13:34:12.527Z",
+    "attendees": []
+  },
+  {
+    "id": "0155b319f4d3",
+    "name": "Rakapak",
+    "author": "John Doe",
+    "description": "Rakapak",
+    "dates": [],
+    "created_at": "2024-01-24T13:30:19.643Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T13:30:19.643Z",
+    "attendees": []
+  },
+  {
+    "id": "f54b0fa9f3b2",
+    "name": "Rakapak",
+    "author": "John Doe",
+    "description": "Rakapak",
+    "dates": [],
+    "created_at": "2024-01-24T13:25:45.579Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T13:25:45.579Z",
+    "attendees": []
   }
 ]

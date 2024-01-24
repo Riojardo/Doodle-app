@@ -210,7 +210,6 @@ import { addRow } from "./assets/checkUser.js";
 let username;
 
 const createButton = document.getElementById("addEventButton");
-const form = document.querySelector(".content__form__todo");
 const eventSelect = document.getElementById('event-select');
 
 document.addEventListener("DOMContentLoaded", (event) => {
