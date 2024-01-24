@@ -1,5 +1,27 @@
 [
   {
+    "id": "2374e43ccdd5",
+    "name": "Wazah birthday",
+    "author": "John Doe",
+    "description": "birthday wazazaza",
+    "dates": [],
+    "created_at": "2024-01-24T10:48:39.110Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T10:48:39.110Z",
+    "attendees": []
+  },
+  {
+    "id": "260317b0f306",
+    "name": "Noe birthday",
+    "author": "John Doe",
+    "description": "Noe birthday",
+    "dates": [],
+    "created_at": "2024-01-24T10:43:33.603Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-24T10:43:33.603Z",
+    "attendees": []
+  },
+  {
     "id": "f5b6564b5dc4",
     "name": "My sweet 16",
     "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
