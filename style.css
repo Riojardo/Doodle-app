@@ -1,96 +1,157 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  margin: 5px;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+.header__title {
+  font-size: 50px;
+  margin-block: 0;
+  margin-inline: 0;
+}
+@media screen and (min-width: 376px) {
+  .header__title {
+    font-size: 80px;
+  }
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+#phrase {
+  color: rgb(0, 0, 0);
+  margin: 40px;
+}
+
+#addEventButton {
+  border: rgb(67, 67, 255) solid 1px;
+  background-color: whitesmoke;
+  color: rgb(67, 67, 255);
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: 1s ease-in-out;
+}
+@media screen and (min-width: 376px) {
+  #addEventButton {
+    font-size: 30px;
+  }
+}
+
+.content__form__todo {
+  background-color: #e1dc75;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  display: none;
+}
+@media screen and (min-width: 376px) {
+  .content__form__todo {
+    font-size: 18px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table.steelBlueCols {
+  border: 4px solid #FFFFFF;
+  background-color: #E1DC75;
+  width: 400px;
   text-align: center;
+  border-collapse: collapse;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+table.steelBlueCols td, table.steelBlueCols th {
+  border: 3px solid #FFFFFF;
+  padding: 5px 10px;
 }
 
-.card {
-  padding: 2em;
+table.steelBlueCols tbody td {
+  font-size: 12px;
+  font-weight: bold;
+  color: #020101;
 }
 
-.read-the-docs {
-  color: #888;
+table.steelBlueCols td:nth-child(even) {
+  background: #E1DC75;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+table.steelBlueCols thead {
+  background: #E1DC75;
+  border-bottom: 10px solid #FFFFFF;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+table.steelBlueCols thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #020101;
+  text-align: left;
+  border-left: 2px solid #FFFFFF;
+}
+
+table.steelBlueCols thead th:first-child {
+  border-left: none;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+
+table.steelBlueCols tfoot .links a {
+  display: inline-block;
+  background: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.form__titre, .form__description, .form__date {
+  border: none;
+  border-radius: 10px;
+}
+
+.form__submit-button {
+  margin-top: 10px;
+  border: rgb(67, 67, 255) solid 1px;
+  background-color: whitesmoke;
+  color: rgb(67, 67, 255);
+  border-radius: 20px;
+  align-self: center;
+}
+@media screen and (min-width: 376px) {
+  .form__submit-button {
+    font-size: 20px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
+
+#event1 {
+  max-width: 300px;
+  overflow: scroll;
+}/*# sourceMappingURL=style.css.map */

@@ -16,36 +16,33 @@
     <p id="phrase"><i>",organises des évènements professionels ou avec tes proches quand tu le souhaites"</i></p>
     <button id="addEventButton" class="header__add-event-button">create +</button>
     <!--Formulaire pour la création d'évenements-->
-    <form class="form">
+    <form class="content__form__todo">
 
       <div class="form__group form__group--title">
-        <p class="form__text">Titre de l'évènement: </p>
-        <input type="text" name="formEvent" class="form__input" required minlength="3" maxlength="256" size="20">
+      <p class="form__text">Titre de l'évènement: </p>
+      <input type="text" name="formEvent" class="form__titre" required minlength="3" maxlength="256" size="20">
       </div>
-
+      
       <div class="form__group form__group--description">
-        <p class="form__text">Description : </p>
-        <input type="text" name="formEvent" class="form__input" required minlength="5" maxlength="1024" size="20">
+      <p class="form__text">Description : </p>
+      <input type="text" name="formEvent" class="form__description" required minlength="5" maxlength="1024" size="20">
       </div>
-
+      
       <div class="form__group form__group--date">
-        <p class="form__text">Date :</p>
-        <input type="date" name="formEvent" class="form__input" required minlength="3" maxlength="50" size="20">
+      <p class="form__text">Date :</p>
+      <input type="date" name="formEvent" id="form__date" required minlength="3" maxlength="50" size="20">
       </div>
-
+      
       <button class="form__submit-button">Submit</button>
-    </form>
-
-    <ul class="header__todo-list">
-    </ul>
+      </form>
   </header>
 
   <main class="main-content">
     <!--Menu deroulant-->
-    <label for="pet-select">Choose an event</br></label>
+    <label for="event-select">Choose an event</br></label>
 
     <select name="event" id="event-select">
-      <option value="">--Please choose an event--</option>
+      <option value="">Please choose an event</option>
       <option value="1">Event 1 - Anniversaire de Robin</option>
       <option value="2">Event 2 - Vacances Espagne</option>
 
@@ -57,7 +54,7 @@
         <p class="event1__description">Venez faire la fête, victuailles a volontée.</p>
 
 
-        <table class="steelBlueCols">
+        <table class="steelBlueCols" id="event1">
           <thead>
           <tr>
             <th></th>

@@ -2,7 +2,7 @@ import { displayForm } from "./assets/form.js";
 import { hideForm } from "./assets/form.js";
 
 const createButton = document.getElementById("addEventButton");
-const form = document.querySelector(".form");
+const form = document.querySelector(".content__form__todo");
 const eventSelect = document.getElementById('event-select');
 
 document.addEventListener("DOMContentLoaded", (event) => {
