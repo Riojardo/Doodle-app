@@ -1,116 +1,3 @@
-// let dataFolder = '/mnt/c/Users/robin/doodle-app/backend/data';
-// let productsFolder = 'products';
-// let productsFile = 'products.json';
-
-// let fullPath = `${dataFolder}/${productsFolder}/${productsFile}`;
-
-// let posted_Data = {
-//   name: 'Sample Event',
-//   dates: [
-//     { date: '2024-02-01', available: true },
-//     { date: '2024-02-15', available: false },
-//     // Add more dates as needed
-//   ],
-// };
-
-/*
-fetch('http://localhost:3000/api/events/',{
-  method: 'GET',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-})
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log('Data successfully posted:', data);
-    console.log("test");
-  })
-  .catch(error => {
-    console.error('Error posting data:', error);
-  });
-  
-
-  let posted_Data = {
-    name: 'New Event',
-    dates: ['2024-03-01', '2024-03-15'],
-    author: 'John Doe',
-    description: 'A new event description',
-  };
-  
-  fetch('http://localhost:3000/api/events/', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(posted_Data),
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log('Data successfully posted:', data);
-    })
-    .catch(error => {
-      console.error('Error posting data:', error);
-    });
-
-
-
-    let name = document.querySelector(".form__titre");
-    let description = document.querySelector(".form__description");
-    let date = document.querySelector(".form__date");
-    let button = document.querySelector(".form__submitt");
-    
-    button.addEventListener("click", add_data);
-    
-    function add_data() {
-      console.log(description.value);
-    }
-
-
-
-  let Data_API= {
-    name: 'New Event',
-    dates: ['2024-03-01', '2024-03-15'],
-    author: 'John Doe',
-    description: 'A new event description',
-  };
-
-
-  document.addEventListener('DOMContentLoaded', () => {
-    let form = document.querySelector(".content__form__todo");
-    let titre = document.querySelector(".form__titre");
-    let description = document.querySelector(".form__description");
-    let date = document.querySelector("#form__date");
-    let dateArray = []; // Array to store multiple date values
-  
-    if (form) {
-      form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent the default form submission behavior
-  
-        console.log("Titre:", titre.value);
-        console.log("Description:", description.value);
-        
-        // Push each date value into the array
-        dateArray.push(date.value);
-  
-        console.log("Dates:", dateArray);
-  
-        // You can add additional logic here, e.g., sending data to the server
-      });
-    } else {
-      console.error("Form with class 'content__form__todo' not found.");
-    }
-  });
-*/
 
 import { displayForm } from "./assets/form.js";
 import { hideForm } from "./assets/form.js";
@@ -423,13 +310,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let thead = document.createElement("thead");
     let theadRow = document.createElement("tr");
-    theadRow.style.border = "1px solid black";
+    thead.style.border = "1px solid black";
     let th_empty = document.createElement("th");
     th_empty.innerHTML = "<u>USERNAME</u>";
     let tbody = document.createElement("tbody");
     let td_check = document.createElement("td");
     td_check.classList.add("td_" + username);
     td_check.textContent = username;
+
+    async function attendees_td() {
+      let childElement = document.querySelector("h2");
+      let parentElement = childElement.parentNode;
+      let parentClass = parentElement.classList.value;
+      console.log(`http://localhost:3000/api/events/${parentClass}`);
+
+      try {
+        let response = await fetch(
+          `http://localhost:3000/api/events/${parentClass}`,
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        data = await response.json();
+      } catch (error) {
+        console.error("Error in the main try block:", error);
+      }
+    }
+    let name_attendees = new Set();
+    let map_row = new Map();
+
+    data.dates.forEach((ele) => {
+      if (ele.attendees) {
+        ele.attendees.forEach((attendee) => {
+          let tr_attendees;
+          if (!name_attendees.has(attendee.name)) {
+            tr_attendees = document.createElement("tr");
+            tr_attendees.textContent = attendee.name;
+            tbody.appendChild(tr_attendees);
+            name_attendees.add(attendee.name);
+            map_row.set(attendee.name, tr_attendees);
+          } else {
+            tr_attendees = map_row.get(attendee.name);
+          }
+          let td_dispo = document.createElement("td");
+          td_dispo.textContent = attendee.available ? "yep" : " ";
+          tr_attendees.appendChild(td_dispo);
+        });
+      }
+    });
+
+    attendees_td();
+
     theadRow.appendChild(th_empty);
     tbody.appendChild(td_check);
 
@@ -532,80 +471,94 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    let eventContainer = document.querySelector(".eventContainer");
+  let eventContainer = document.querySelector(".eventContainer");
 
-    eventContainer.addEventListener("change", function (event) {
-      if (event.target.type === "checkbox") {
-        add_attendees(event, event.target.classList.value);
-      }
-    });
-    
-    function transformDateFormat(inputDate) {
-      let parts = inputDate.split('/');
-      let dateObject = new Date(`${parts[2]}-${parts[1]}-${parts[0]}`);
-      let formattedDate = dateObject.toISOString().split('T')[0];
-      return formattedDate;
+  eventContainer.addEventListener("change", function (event) {
+    if (event.target.type === "checkbox") {
+      add_attendees(event, event.target.classList.value);
     }
-    
-    async function add_attendees(event, date_cible) {
-    
-      let childElement = document.querySelector("h2");
-      if (childElement) {
-        let adapted_date = transformDateFormat(date_cible);
-        let parentElement = childElement.parentNode;
-        let parentClass = parentElement.classList.value;
-        console.log(`http://localhost:3000/api/events/${parentClass}`);
-    
-        try {
-          let response = await fetch(`http://localhost:3000/api/events/${parentClass}`, {
-            method: 'GET',
+  });
+
+  function transformDateFormat(inputDate) {
+    let parts = inputDate.split("/");
+    let dateObject = new Date(`${parts[2]}-${parts[1]}-${parts[0]}`);
+    let formattedDate = dateObject.toISOString().split("T")[0];
+    return formattedDate;
+  }
+
+  async function add_attendees(event, date_cible) {
+    let childElement = document.querySelector("h2");
+    if (childElement) {
+      let adapted_date = transformDateFormat(date_cible);
+      let parentElement = childElement.parentNode;
+      let parentClass = parentElement.classList.value;
+      console.log(`http://localhost:3000/api/events/${parentClass}`);
+
+      try {
+        let response = await fetch(
+          `http://localhost:3000/api/events/${parentClass}`,
+          {
+            method: "GET",
             headers: {
-              'Content-Type': 'application/json',
+              "Content-Type": "application/json",
             },
-          });
-    
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
           }
-    
-          let data = await response.json();
-          console.log(data);
-          console.log(username);
-          console.log(date_cible);
-    
-          let index = data.dates.findIndex(dateItem => dateItem.date === adapted_date);
-          console.log(index);
-          console.log(`http://localhost:3000/api/events/${parentClass}/attend`)
-    
-          let attendees_modified = {
-            name: username,
-            dates: [adapted_date],
-            available: true,
-          };
-    
-          try {
-            let postResponse = await fetch(`http://localhost:3000/api/events/${parentClass}/attend`, {
-              method: 'POST',
+        );
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        let data = await response.json();
+        console.log(data);
+        console.log(username);
+        console.log(date_cible);
+
+        let index = data.dates.findIndex(
+          (dateItem) => dateItem.date === adapted_date
+        );
+        console.log(index);
+        console.log(`http://localhost:3000/api/events/${parentClass}/attend`);
+        let attendees_modified = {
+          dates: data.dates.map((dateItem, i) => {
+            if (i === index) {
+              return {
+                date: adapted_date,
+                available: true,
+              };
+            }
+            return {
+              date: dateItem.date,
+              available: dateItem.available || false,
+            };
+          }),
+          name: username,
+        };
+
+        try {
+          let postResponse = await fetch(
+            `http://localhost:3000/api/events/${parentClass}/attend`,
+            {
+              method: "POST",
               headers: {
-                'Content-Type': 'application/json',
+                "Content-Type": "application/json",
               },
               body: JSON.stringify(attendees_modified),
-            });
-    
-            if (!postResponse.ok) {
-              throw new Error(`HTTP error! Status: ${postResponse.status}`);
             }
-    
-            let postedData = await postResponse.json();
-            console.log("Data successfully posted:", postedData);
-          } catch (error) {
-            console.error("Error posting data:", error);
+          );
+          if (!postResponse.ok) {
+            throw new Error(`HTTP error! Status: ${postResponse.status}`);
           }
+          let postedData = await postResponse.json();
+          console.log("Data successfully posted:", postedData);
         } catch (error) {
-          console.error("Error in the main try block:", error);
+          console.error("Error posting data:", error);
         }
+      } catch (error) {
+        console.error("Error in the main try block:", error);
       }
     }
+  }
 });
 
 //---------------------CODE NOE-------WAZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH---------------

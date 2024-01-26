@@ -1,10 +1,17 @@
 [
   {
-    "id": "cb213043bb24",
-    "name": "egegegegege",
-    "author": "xghjklmù",
-    "description": "sdfghjklmù",
+    "id": "9e5ecb395c82",
+    "name": "Gange bang",
+    "author": "jhjhjhjhj",
+    "description": "birthday",
     "dates": [
+      "2024-01-02",
+      "2024-01-03",
+      "2024-01-04",
+      "2024-01-05",
+      "2024-01-06",
+      "2024-01-07",
+      "2024-01-08",
       "2024-01-09",
       "2024-01-10",
       "2024-01-11",
@@ -25,10 +32,557 @@
       "2024-01-26",
       "2024-01-27"
     ],
-    "created_at": "2024-01-25T23:45:38.072Z",
+    "created_at": "2024-01-26T17:11:37.023Z",
     "num_modification": 0,
-    "last_modification": "2024-01-25T23:45:38.072Z",
-    "attendees": []
+    "last_modification": "2024-01-26T17:11:37.023Z",
+    "attendees": [
+      {
+        "dates": [
+          {
+            "date": "2024-01-02",
+            "available": false
+          },
+          {
+            "date": "2024-01-03",
+            "available": true
+          },
+          {
+            "date": "2024-01-04",
+            "available": false
+          },
+          {
+            "date": "2024-01-05",
+            "available": false
+          },
+          {
+            "date": "2024-01-06",
+            "available": false
+          },
+          {
+            "date": "2024-01-07",
+            "available": false
+          },
+          {
+            "date": "2024-01-08",
+            "available": false
+          },
+          {
+            "date": "2024-01-09",
+            "available": false
+          },
+          {
+            "date": "2024-01-10",
+            "available": false
+          },
+          {
+            "date": "2024-01-11",
+            "available": false
+          },
+          {
+            "date": "2024-01-12",
+            "available": false
+          },
+          {
+            "date": "2024-01-13",
+            "available": false
+          },
+          {
+            "date": "2024-01-14",
+            "available": false
+          },
+          {
+            "date": "2024-01-15",
+            "available": false
+          },
+          {
+            "date": "2024-01-16",
+            "available": false
+          },
+          {
+            "date": "2024-01-17",
+            "available": false
+          },
+          {
+            "date": "2024-01-18",
+            "available": false
+          },
+          {
+            "date": "2024-01-19",
+            "available": false
+          },
+          {
+            "date": "2024-01-20",
+            "available": false
+          },
+          {
+            "date": "2024-01-21",
+            "available": false
+          },
+          {
+            "date": "2024-01-22",
+            "available": false
+          },
+          {
+            "date": "2024-01-23",
+            "available": false
+          },
+          {
+            "date": "2024-01-24",
+            "available": false
+          },
+          {
+            "date": "2024-01-25",
+            "available": false
+          },
+          {
+            "date": "2024-01-26",
+            "available": false
+          },
+          {
+            "date": "2024-01-27",
+            "available": false
+          }
+        ],
+        "name": "jhjhjhjhj"
+      }
+    ]
+  },
+  {
+    "id": "92b521dd45a8",
+    "name": "BIRTHDAY",
+    "author": "hjklmmklm",
+    "description": "birthday PARTY",
+    "dates": [
+      "2024-01-10",
+      "2024-01-11",
+      "2024-01-12",
+      "2024-01-13",
+      "2024-01-14",
+      "2024-01-15",
+      "2024-01-16",
+      "2024-01-17",
+      "2024-01-18",
+      "2024-01-19",
+      "2024-01-20",
+      "2024-01-21",
+      "2024-01-22",
+      "2024-01-23",
+      "2024-01-24",
+      "2024-01-25",
+      "2024-01-26",
+      "2024-01-27",
+      "2024-01-28"
+    ],
+    "created_at": "2024-01-26T14:16:53.067Z",
+    "num_modification": 0,
+    "last_modification": "2024-01-26T14:16:53.067Z",
+    "attendees": [
+      {
+        "dates": [
+          {
+            "date": "2024-01-10",
+            "available": false
+          },
+          {
+            "date": "2024-01-11",
+            "available": false
+          },
+          {
+            "date": "2024-01-12",
+            "available": false
+          },
+          {
+            "date": "2024-01-13",
+            "available": false
+          },
+          {
+            "date": "2024-01-14",
+            "available": false
+          },
+          {
+            "date": "2024-01-15",
+            "available": true
+          },
+          {
+            "date": "2024-01-16",
+            "available": false
+          },
+          {
+            "date": "2024-01-17",
+            "available": false
+          },
+          {
+            "date": "2024-01-18",
+            "available": false
+          },
+          {
+            "date": "2024-01-19",
+            "available": false
+          },
+          {
+            "date": "2024-01-20",
+            "available": false
+          },
+          {
+            "date": "2024-01-21",
+            "available": false
+          },
+          {
+            "date": "2024-01-22",
+            "available": false
+          },
+          {
+            "date": "2024-01-23",
+            "available": false
+          },
+          {
+            "date": "2024-01-24",
+            "available": false
+          },
+          {
+            "date": "2024-01-25",
+            "available": false
+          },
+          {
+            "date": "2024-01-26",
+            "available": false
+          },
+          {
+            "date": "2024-01-27",
+            "available": false
+          },
+          {
+            "date": "2024-01-28",
+            "available": false
+          }
+        ],
+        "name": "hjklmmklm"
+      },
+      {
+        "dates": [
+          {
+            "date": "2024-01-10",
+            "available": false
+          },
+          {
+            "date": "2024-01-11",
+            "available": false
+          },
+          {
+            "date": "2024-01-12",
+            "available": false
+          },
+          {
+            "date": "2024-01-13",
+            "available": false
+          },
+          {
+            "date": "2024-01-14",
+            "available": true
+          },
+          {
+            "date": "2024-01-15",
+            "available": false
+          },
+          {
+            "date": "2024-01-16",
+            "available": false
+          },
+          {
+            "date": "2024-01-17",
+            "available": false
+          },
+          {
+            "date": "2024-01-18",
+            "available": false
+          },
+          {
+            "date": "2024-01-19",
+            "available": false
+          },
+          {
+            "date": "2024-01-20",
+            "available": false
+          },
+          {
+            "date": "2024-01-21",
+            "available": false
+          },
+          {
+            "date": "2024-01-22",
+            "available": false
+          },
+          {
+            "date": "2024-01-23",
+            "available": false
+          },
+          {
+            "date": "2024-01-24",
+            "available": false
+          },
+          {
+            "date": "2024-01-25",
+            "available": false
+          },
+          {
+            "date": "2024-01-26",
+            "available": false
+          },
+          {
+            "date": "2024-01-27",
+            "available": false
+          },
+          {
+            "date": "2024-01-28",
+            "available": false
+          }
+        ],
+        "name": "azertyuiopmlkjhgfd"
+      },
+      {
+        "dates": [
+          {
+            "date": "2024-01-10",
+            "available": false
+          },
+          {
+            "date": "2024-01-11",
+            "available": false
+          },
+          {
+            "date": "2024-01-12",
+            "available": false
+          },
+          {
+            "date": "2024-01-13",
+            "available": false
+          },
+          {
+            "date": "2024-01-14",
+            "available": false
+          },
+          {
+            "date": "2024-01-15",
+            "available": true
+          },
+          {
+            "date": "2024-01-16",
+            "available": false
+          },
+          {
+            "date": "2024-01-17",
+            "available": false
+          },
+          {
+            "date": "2024-01-18",
+            "available": false
+          },
+          {
+            "date": "2024-01-19",
+            "available": false
+          },
+          {
+            "date": "2024-01-20",
+            "available": false
+          },
+          {
+            "date": "2024-01-21",
+            "available": false
+          },
+          {
+            "date": "2024-01-22",
+            "available": false
+          },
+          {
+            "date": "2024-01-23",
+            "available": false
+          },
+          {
+            "date": "2024-01-24",
+            "available": false
+          },
+          {
+            "date": "2024-01-25",
+            "available": false
+          },
+          {
+            "date": "2024-01-26",
+            "available": false
+          },
+          {
+            "date": "2024-01-27",
+            "available": false
+          },
+          {
+            "date": "2024-01-28",
+            "available": false
+          }
+        ],
+        "name": "iuhgcj"
+      },
+      {
+        "dates": [
+          {
+            "date": "2024-01-10",
+            "available": true
+          },
+          {
+            "date": "2024-01-11",
+            "available": false
+          },
+          {
+            "date": "2024-01-12",
+            "available": false
+          },
+          {
+            "date": "2024-01-13",
+            "available": false
+          },
+          {
+            "date": "2024-01-14",
+            "available": false
+          },
+          {
+            "date": "2024-01-15",
+            "available": false
+          },
+          {
+            "date": "2024-01-16",
+            "available": false
+          },
+          {
+            "date": "2024-01-17",
+            "available": false
+          },
+          {
+            "date": "2024-01-18",
+            "available": false
+          },
+          {
+            "date": "2024-01-19",
+            "available": false
+          },
+          {
+            "date": "2024-01-20",
+            "available": false
+          },
+          {
+            "date": "2024-01-21",
+            "available": false
+          },
+          {
+            "date": "2024-01-22",
+            "available": false
+          },
+          {
+            "date": "2024-01-23",
+            "available": false
+          },
+          {
+            "date": "2024-01-24",
+            "available": false
+          },
+          {
+            "date": "2024-01-25",
+            "available": false
+          },
+          {
+            "date": "2024-01-26",
+            "available": false
+          },
+          {
+            "date": "2024-01-27",
+            "available": false
+          },
+          {
+            "date": "2024-01-28",
+            "available": false
+          }
+        ],
+        "name": "hjhjhjhj"
+      },
+      {
+        "dates": [
+          {
+            "date": "2024-01-10",
+            "available": false
+          },
+          {
+            "date": "2024-01-11",
+            "available": true
+          },
+          {
+            "date": "2024-01-12",
+            "available": false
+          },
+          {
+            "date": "2024-01-13",
+            "available": false
+          },
+          {
+            "date": "2024-01-14",
+            "available": false
+          },
+          {
+            "date": "2024-01-15",
+            "available": false
+          },
+          {
+            "date": "2024-01-16",
+            "available": false
+          },
+          {
+            "date": "2024-01-17",
+            "available": false
+          },
+          {
+            "date": "2024-01-18",
+            "available": false
+          },
+          {
+            "date": "2024-01-19",
+            "available": false
+          },
+          {
+            "date": "2024-01-20",
+            "available": false
+          },
+          {
+            "date": "2024-01-21",
+            "available": false
+          },
+          {
+            "date": "2024-01-22",
+            "available": false
+          },
+          {
+            "date": "2024-01-23",
+            "available": false
+          },
+          {
+            "date": "2024-01-24",
+            "available": false
+          },
+          {
+            "date": "2024-01-25",
+            "available": false
+          },
+          {
+            "date": "2024-01-26",
+            "available": false
+          },
+          {
+            "date": "2024-01-27",
+            "available": false
+          },
+          {
+            "date": "2024-01-28",
+            "available": false
+          }
+        ],
+        "name": "jhjhjhj"
+      }
+    ]
   },
   {
     "id": "44b029344916",
@@ -49,31 +603,12 @@
     "created_at": "2024-01-25T23:24:11.966Z",
     "num_modification": 0,
     "last_modification": "2024-01-25T23:24:11.966Z",
-    "attendees": []
-  },
-  {
-    "id": "7614e19e3293",
-    "name": "gang bang",
-    "author": "dfghjkl",
-    "description": "gang bang",
-    "dates": [
-      "2024-01-01",
-      "2024-01-02",
-      "2024-01-03",
-      "2024-01-04",
-      "2024-01-05",
-      "2024-01-06",
-      "2024-01-07",
-      "2024-01-08",
-      "2024-01-09",
-      "2024-01-10",
-      "2024-01-11",
-      "2024-01-12"
-    ],
-    "created_at": "2024-01-25T21:48:15.728Z",
-    "num_modification": 0,
-    "last_modification": "2024-01-25T21:48:15.728Z",
-    "attendees": []
+    "attendees": [
+      {
+        "name": "fgdfgdfg",
+        "dates": []
+      }
+    ]
   },
   {
     "id": "99e2f411a4f6",
