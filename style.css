@@ -168,7 +168,6 @@ table.steelBlueCols tfoot .links a {
   color: rgb(67, 67, 255);
   border-radius: 20px;
   align-self: center;
-  display: none;
 }
 @media screen and (min-width: 376px) {
   #delete {
